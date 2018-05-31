@@ -1,4 +1,4 @@
-require "pry"
+
 def game_hash
   stats = {
     :home =>{
@@ -151,7 +151,6 @@ def players
   game_hash.each do |location, team_data|
     output.merge!(team_data[:players])
   end
-  binding.pry
   return output
 end
 def shoe_size(player_name)
