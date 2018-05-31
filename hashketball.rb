@@ -139,11 +139,12 @@ def num_points_scored(player_name)
   #    return team_data[:players][player_name][:points]
   #   end
   # end
-  players.each do | name , player_stats |
-    if player_name == name
-      player_stats[:points]
-    end
-  end
+  # players.each do | name , player_stats |
+  #   if player_name == name
+  #     player_stats[:points]
+  #   end
+  # end
+  return players[player_name][:points]
 end
 def players
   output = {}
