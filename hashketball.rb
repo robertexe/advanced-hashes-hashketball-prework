@@ -141,11 +141,11 @@ def num_points_scored(player_name)
   end
 end
 def players
-  binding.pry
   output = {}
   game_hash.each do |location, team_data|
     output.merge(team_data[:players])
   end
+  binding.pry
   return output
 end
 def shoe_size(player_name)
