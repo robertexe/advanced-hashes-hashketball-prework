@@ -143,7 +143,7 @@ end
 def players
   output = {}
   game_hash.each do |location, team_data|
-    output.merge(team_data[:players])
+    output.merge!(team_data[:players])
   end
   binding.pry
   return output
