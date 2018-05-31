@@ -134,9 +134,14 @@ end
 
 def num_points_scored(player_name)
   stats = game_hash
-  stats.each do | location, team_data|
-    if team_data[:players].has_key?(player_name)
-     return team_data[:players][player_name][:points]
+  # stats.each do | location, team_data|
+  #   if team_data[:players].has_key?(player_name)
+  #    return team_data[:players][player_name][:points]
+  #   end
+  # end
+  players.each do | name , player_stats |
+    if player_name == name
+      player_stats[:points]
     end
   end
 end
